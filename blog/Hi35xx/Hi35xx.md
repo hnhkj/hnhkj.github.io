@@ -19,10 +19,22 @@ $ source /etc/profile
 
 ## 问题
 
-* 问题1：Ubuntu切换默认sh为bash或者dash
+#### 问题1：Ubuntu切换默认sh为bash或者dash
 
 ```
 $ sudo dpkg-reconfigure dash
 ```
 
 选择`no`.
+
+#### 问题2：mkimage没有安装
+
+```
+$ sudo apt-get install u-boot-tools
+```
+
+#### 问题3：mkyaffs2image编译不过
+
+清除`*.o`，或`make clean`.
+
+<http://blog.csdn.net/ternence_hsu/article/details/53421814>
