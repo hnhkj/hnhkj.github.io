@@ -37,4 +37,9 @@ $ sudo apt-get install u-boot-tools
 
 清除`*.o`，或`make clean`.
 
+```
+$ cd osdrv/tools/pc/mkyaffs2image
+$ make clean
+```
+
 <http://blog.csdn.net/ternence_hsu/article/details/53421814>
