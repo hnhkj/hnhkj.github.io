@@ -1,5 +1,38 @@
 # CMake应用手册
 
+## 問題解答
+
+#### config_file
+
+在`CMakeLIsts`中創建下面指令
+
+```
+configure_file (
+  "${PROJECT_SOURCE_DIR}/config.h.in"
+  "${PROJECT_SOURCE_DIR}/config.h"
+)
+```
+
+在項目目錄下創建`config.h.in`文件
+
+```
+#define PROJECT_NAME @PROJECT_NAME@
+#define VERSION @PROJECT_VERSION@
+
+#cmakedefine   TESTDEF
+#cmakedefine01 ON_OFF
+```
+
+生成的`config.h`文件
+
+```
+#define PROJECT_NAME iptap3
+#define VERSION 1.0.3.1
+
+/* #undef TESTDEF */
+#define ON_OFF 0
+```
+
 **文档地址：<https://cmake.org/cmake-tutorial/>**
 
 Below is a step-by-step tutorial covering common build system issues that CMake helps to address. Many of these topics have been introduced in Mastering CMake as separate issues but seeing how they all work together in an example project can be very helpful. This tutorial can be found in the Tests/Tutorial directory of the CMake source code tree. Each step has its own subdirectory containing a complete copy of the tutorial for that step
