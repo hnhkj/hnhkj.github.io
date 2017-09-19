@@ -47,3 +47,42 @@
                 * CHtmlView
                 * COleDBRecordView
                 * CRecordView
+
+## 对话框控件
+
+#### Check Box
+
+* Appearance//外观
+    * Bitmap
+        - Specifies that the control displays a bitmap instead of text
+    * Caption
+        - Specifies the text displayed by the control
+    * Client Edge
+    * Flat
+    * Horizontal Alignment
+    * Icon
+    * Left Text
+    * Modal Frame
+    * Multiline
+    * Notify
+    * Push Like
+    * Right Align Text
+    * Right to Left Reading Order
+    * Static Edge
+    * Transparent
+    * Vertical Alignment
+* Behavior//行为
+    * Accept Files
+    * Auto
+    * Disabled
+    * Help ID
+    * Tri-state
+    * Visible
+* Dynamic Layout//动态布局
+    * Moving Type
+    * Sizeing Type
+* Misc//杂项
+    * (Name)
+    * Group
+    * ID
+    * Tabstop
