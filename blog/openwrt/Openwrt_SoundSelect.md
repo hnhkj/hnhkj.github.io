@@ -1,7 +1,7 @@
 ---
 title: "openwrt-声卡选择"
 author: "hnhkj@163.com"
-date: "2016年6月28日"
+date: "2016-6-28"
 output: html_document
 ---
 
