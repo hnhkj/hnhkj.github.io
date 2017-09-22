@@ -1,6 +1,6 @@
 # Visual Studio
 
-## Keys 
+## Keys
 
 * IDM_AOUBTBOX - ID-Menu
 * IDD_ABOUTBOX - ID-Dialog
@@ -12,7 +12,12 @@
 * IDS_  - ID String Table
 
 
+* Group Box - ×é¿ò
+* Radio Button - µ¥Ñ¡°´Å¥£¬ÔÚÒ»×éÖĞ£¬Ò»´ÎÖ»ÄÜÑ¡ÔñÒ»¸ö°´Å¥
+* Check Box - ¸´Ñ¡¿ò£¬ ÔÚÒ»×éÖĞ£¬Ò»´Î¿ÉÒÔÑ¡Ôñ¶à¸ö¸´Ñ¡¿ò
+
 ## Visual C++
+
 
 
 ## Class
@@ -60,7 +65,7 @@
                 * COleDBRecordView
                 * CRecordView
 
-## å¯¹è¯æ¡†æ§ä»¶
+## ¶Ô»°¿ò¿Ø¼ş
 
 #### Dialog
 
@@ -87,7 +92,7 @@
 
 #### Check Box
 
-* Appearance//å¤–è§‚
+* Appearance//Íâ¹Û
     * Bitmap
         - Specifies that the control displays a bitmap instead of text
     * Caption
@@ -120,7 +125,7 @@
         - Specifies that the control will have a transparent background.
     * Vertical Alignment
         - One of: Default, Bottom, Top, or Center.
-* Behavior//è¡Œä¸º
+* Behavior//ĞĞÎª
     * Accept Files
         - Specifies that the control will accept drag and drop files.
     * Auto
@@ -133,12 +138,12 @@
         - Specifies that the checkbox is tristate.
     * Visible
         - Specifies that the control is iniially visible.
-* Dynamic Layout//åŠ¨æ€å¸ƒå±€
+* Dynamic Layout//¶¯Ì¬²¼¾Ö
     * Moving Type
         - Defines move direction of a child control when a hosting window is being resized.
     * Sizeing Type
         - Defines how to resize a child control when a hosting window is being resized.
-* Misc//æ‚é¡¹
+* Misc//ÔÓÏî
     * (Name)
     * Group
         - Specifies the first control in a group of controls based on tab order.
@@ -146,3 +151,25 @@
         - Specifies the identifier of the control
     * Tabstop
         - Specifies that the user can move to this control with the TAB key.
+
+
+## View
+
+#### CheckBox
+
+CheckBox ¿Ø¼ş¸ÅÊö£¨Windows ´°Ìå£©
+
+.NET Framework (current version) ÆäËû°æ±¾ 
+ 
+Windows ´°Ìå CheckBox ¿Ø¼şÖ¸Ê¾Ä³¸öÌØ¶¨Ìõ¼şÊÇ´¦ÓÚ´ò¿ª»¹ÊÇ¹Ø±Õ×´Ì¬¡£ Ëü³£ÓÃÓÚÎªÓÃ»§Ìá¹©ÊÇ/·ñ»òÕæ/¼ÙÑ¡Ïî¡£ ¿ÉÒÔ³É×éÊ¹ÓÃ¸´Ñ¡¿ò (CheckBox) ¿Ø¼şÒÔÏÔÊ¾¶àÖØÑ¡Ïî£¬ÓÃ»§¿ÉÒÔ´ÓÖĞÑ¡ÔñÒ»Ïî»ò¶àÏî¡£
+¸´Ñ¡¿ò (CheckBox) ¿Ø¼şºÍµ¥Ñ¡°´Å¥ (RadioButton) ¿Ø¼şµÄÏàËÆÖ®´¦ÔÚÓÚ£¬ËüÃÇ¶¼ÊÇÓÃÓÚÖ¸Ê¾ÓÃ»§ËùÑ¡µÄÑ¡Ïî¡£ ËüÃÇµÄ²»Í¬Ö®´¦ÔÚÓÚ£¬ÔÚµ¥Ñ¡°´Å¥×éÖĞÒ»´ÎÖ»ÄÜÑ¡ÔñÒ»¸öµ¥Ñ¡°´Å¥¡£ µ«ÊÇ¶ÔÓÚ¸´Ñ¡¿ò (CheckBox) ¿Ø¼ş£¬Ôò¿ÉÒÔÑ¡ÔñÈÎÒâÊıÁ¿µÄ¸´Ñ¡¿ò¡£
+¸´Ñ¡¿ò¿ÉÒÔÊ¹ÓÃ¼òµ¥Êı¾İ°ó¶¨Á¬½Óµ½Êı¾İ¿âÖĞµÄÔªËØ¡£ ¶à¸ö¸´Ñ¡¿ò¿ÉÒÔÊ¹ÓÃ GroupBox ¿Ø¼ş½øĞĞ·Ö×é¡£ Õâ¶ÔÓÚ¿ÉÊÓÍâ¹ÛÒÔ¼°ÓÃ»§½çÃæÉè¼ÆºÜÓĞÓÃ£¬ÒòÎª³É×é¿Ø¼ş¿ÉÒÔÔÚ´°ÌåÉè¼ÆÆ÷ÉÏÒ»ÆğÒÆ¶¯¡£ ÓĞ¹Ø¸ü¶àĞÅÏ¢£¬Çë²Î¼ûWindows ´°ÌåÊı¾İ°ó¶¨ºÍ GroupBox ¿Ø¼ş£¨Windows ´°Ìå£©¡£
+CheckBox ¿Ø¼şÓĞÁ½¸öÖØÒªÊôĞÔ£ºChecked ºÍ CheckState¡£ Checked ÊôĞÔ·µ»Ø true »ò false¡£ CheckState ÊôĞÔ·µ»Ø Checked »ò Unchecked£»Èç¹û ThreeState ÊôĞÔ±»ÉèÖÃÎª true£¬Ôò CheckState »¹¿ÉÄÜ·µ»Ø Indeterminate¡£ ´¦ÓÚ²»È·¶¨×´Ì¬Ê±£¬¸Ã¿ò»áÏÔÊ¾Îª»ÒÏÔÍâ¹Û£¬Ö¸Ê¾¸ÃÑ¡Ïî²»¿ÉÓÃ¡£
+
+## ²Î¿¼
+
+#### microsoft
+
+<https://msdn.microsoft.com/zh-cn/library/cc309030.aspx>
+
+<https://docs.microsoft.com/zh-cn/windows/uwp/xaml-platform/xaml-overview>
