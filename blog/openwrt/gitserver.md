@@ -3,7 +3,7 @@
 ---
 title: "Openwrt-搭建一个Git服务器"
 author: "huang Kongjun"
-date: "2016年7月25日"
+date: "2016-7-25"
 output: html_document
 ---
 

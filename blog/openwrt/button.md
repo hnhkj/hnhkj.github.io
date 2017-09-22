@@ -3,7 +3,7 @@
 ---
 title: "一点一滴分析LinkIt™ Smart 7688 按钮操作"
 author: "hnhkj@163.com"
-date: "2016年4月12日"
+date: "2016-4-12"
 output: html_document
 ---
 

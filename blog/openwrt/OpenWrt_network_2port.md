@@ -3,7 +3,7 @@
 ---
 title: "Linkit Smart 7688 //OpenWrt - 2port"
 author: "hnhkj@163.com"
-date: "2016年6月18日"
+date: "2016-6-18"
 output: html_document
 ---
 

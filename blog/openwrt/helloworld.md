@@ -3,7 +3,7 @@
 ---
 title: "OpenWrt-helloworld"
 author: "hnhkj@163.com"
-date: "2016年6月24日"
+date: "2016-6-24"
 output: html_document
 ---
 

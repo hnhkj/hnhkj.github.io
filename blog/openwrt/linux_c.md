@@ -1,7 +1,7 @@
 ---
 title: "Linux - C program"
 author: "hnhkj@163.com"
-date: "2016年6月23日"
+date: "2016-6-23"
 output: html_document
 ---
 

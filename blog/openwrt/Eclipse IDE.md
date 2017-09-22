@@ -3,7 +3,7 @@
 ---
 title: "Openwrt building and debugging C/C++ Programs with Eclipse"
 author: "hnhkj@163.com"
-date: "2016年12月16日"
+date: "2016-12-16"
 output: word_document
 ---
 

@@ -3,7 +3,7 @@
 ---
 title: "OpenWrt - MiniDLNA"
 author: "hnhkj@163.com"
-date: "2016年6月13日"
+date: "2016-6-13"
 output: html_document
 ---
 

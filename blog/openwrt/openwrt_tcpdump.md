@@ -3,7 +3,7 @@
 ---
 title: "OpenWrt - tcpdump抓取指定端口的数据包"
 author: "hnhkj@163.com"
-date: "2016年10月10日"
+date: "2016-10-10"
 output: html_document
 ---
 

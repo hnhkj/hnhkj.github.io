@@ -1,7 +1,7 @@
 ---
 title: "OpenWrt - Switch Documentation"
 author: "hnhkj@163.com"
-date: "2016年9月30日"
+date: "2016-9-30"
 output: html_document
 ---
 

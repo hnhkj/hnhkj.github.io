@@ -1,7 +1,7 @@
 ---
 title: "Openwrt-网络配置"
 author: "huang Kongjun"
-date: "2016年7月28日"
+date: "2016-7-28"
 output: html_document
 ---
 
