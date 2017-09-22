@@ -1,6 +1,6 @@
 # Visual Studio
 
-## Keys
+## Keys 
 
 * IDM_AOUBTBOX - ID-Menu
 * IDD_ABOUTBOX - ID-Dialog
@@ -60,7 +60,7 @@
                 * COleDBRecordView
                 * CRecordView
 
-## ¶Ô»°¿ò¿Ø¼ş
+## å¯¹è¯æ¡†æ§ä»¶
 
 #### Dialog
 
@@ -87,7 +87,7 @@
 
 #### Check Box
 
-* Appearance//Íâ¹Û
+* Appearance//å¤–è§‚
     * Bitmap
         - Specifies that the control displays a bitmap instead of text
     * Caption
@@ -120,7 +120,7 @@
         - Specifies that the control will have a transparent background.
     * Vertical Alignment
         - One of: Default, Bottom, Top, or Center.
-* Behavior//ĞĞÎª
+* Behavior//è¡Œä¸º
     * Accept Files
         - Specifies that the control will accept drag and drop files.
     * Auto
@@ -133,12 +133,12 @@
         - Specifies that the checkbox is tristate.
     * Visible
         - Specifies that the control is iniially visible.
-* Dynamic Layout//¶¯Ì¬²¼¾Ö
+* Dynamic Layout//åŠ¨æ€å¸ƒå±€
     * Moving Type
         - Defines move direction of a child control when a hosting window is being resized.
     * Sizeing Type
         - Defines how to resize a child control when a hosting window is being resized.
-* Misc//ÔÓÏî
+* Misc//æ‚é¡¹
     * (Name)
     * Group
         - Specifies the first control in a group of controls based on tab order.
