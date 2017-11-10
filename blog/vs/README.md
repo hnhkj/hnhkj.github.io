@@ -12,9 +12,9 @@
 * IDS_  - ID String Table
 
 
-* Group Box - ×é¿ò
-* Radio Button - µ¥Ñ¡°´Å¥£¬ÔÚÒ»×éÖĞ£¬Ò»´ÎÖ»ÄÜÑ¡ÔñÒ»¸ö°´Å¥
-* Check Box - ¸´Ñ¡¿ò£¬ ÔÚÒ»×éÖĞ£¬Ò»´Î¿ÉÒÔÑ¡Ôñ¶à¸ö¸´Ñ¡¿ò
+* Group Box - ç»„æ¡†
+* Radio Button - å•é€‰æŒ‰é’®ï¼Œåœ¨ä¸€ç»„ä¸­ï¼Œä¸€æ¬¡åªèƒ½é€‰æ‹©ä¸€ä¸ªæŒ‰é’®
+* Check Box - å¤é€‰æ¡†ï¼Œ åœ¨ä¸€ç»„ä¸­ï¼Œä¸€æ¬¡å¯ä»¥é€‰æ‹©å¤šä¸ªå¤é€‰æ¡†
 
 ## Visual C++
 
@@ -65,7 +65,7 @@
                 * COleDBRecordView
                 * CRecordView
 
-## ¶Ô»°¿ò¿Ø¼ş
+## å¯¹è¯æ¡†æ§ä»¶
 
 #### Dialog
 
@@ -92,7 +92,7 @@
 
 #### Check Box
 
-* Appearance//Íâ¹Û
+* Appearance//å¤–è§‚
     * Bitmap
         - Specifies that the control displays a bitmap instead of text
     * Caption
@@ -125,7 +125,7 @@
         - Specifies that the control will have a transparent background.
     * Vertical Alignment
         - One of: Default, Bottom, Top, or Center.
-* Behavior//ĞĞÎª
+* Behavior//è¡Œä¸º
     * Accept Files
         - Specifies that the control will accept drag and drop files.
     * Auto
@@ -138,12 +138,12 @@
         - Specifies that the checkbox is tristate.
     * Visible
         - Specifies that the control is iniially visible.
-* Dynamic Layout//¶¯Ì¬²¼¾Ö
+* Dynamic Layout//åŠ¨æ€å¸ƒå±€
     * Moving Type
         - Defines move direction of a child control when a hosting window is being resized.
     * Sizeing Type
         - Defines how to resize a child control when a hosting window is being resized.
-* Misc//ÔÓÏî
+* Misc//æ‚é¡¹
     * (Name)
     * Group
         - Specifies the first control in a group of controls based on tab order.
@@ -157,16 +157,16 @@
 
 #### CheckBox
 
-CheckBox ¿Ø¼ş¸ÅÊö£¨Windows ´°Ìå£©
+CheckBox æ§ä»¶æ¦‚è¿°ï¼ˆWindows çª—ä½“ï¼‰
 
-.NET Framework (current version) ÆäËû°æ±¾ 
+.NET Framework (current version) å…¶ä»–ç‰ˆæœ¬ 
  
-Windows ´°Ìå CheckBox ¿Ø¼şÖ¸Ê¾Ä³¸öÌØ¶¨Ìõ¼şÊÇ´¦ÓÚ´ò¿ª»¹ÊÇ¹Ø±Õ×´Ì¬¡£ Ëü³£ÓÃÓÚÎªÓÃ»§Ìá¹©ÊÇ/·ñ»òÕæ/¼ÙÑ¡Ïî¡£ ¿ÉÒÔ³É×éÊ¹ÓÃ¸´Ñ¡¿ò (CheckBox) ¿Ø¼şÒÔÏÔÊ¾¶àÖØÑ¡Ïî£¬ÓÃ»§¿ÉÒÔ´ÓÖĞÑ¡ÔñÒ»Ïî»ò¶àÏî¡£
-¸´Ñ¡¿ò (CheckBox) ¿Ø¼şºÍµ¥Ñ¡°´Å¥ (RadioButton) ¿Ø¼şµÄÏàËÆÖ®´¦ÔÚÓÚ£¬ËüÃÇ¶¼ÊÇÓÃÓÚÖ¸Ê¾ÓÃ»§ËùÑ¡µÄÑ¡Ïî¡£ ËüÃÇµÄ²»Í¬Ö®´¦ÔÚÓÚ£¬ÔÚµ¥Ñ¡°´Å¥×éÖĞÒ»´ÎÖ»ÄÜÑ¡ÔñÒ»¸öµ¥Ñ¡°´Å¥¡£ µ«ÊÇ¶ÔÓÚ¸´Ñ¡¿ò (CheckBox) ¿Ø¼ş£¬Ôò¿ÉÒÔÑ¡ÔñÈÎÒâÊıÁ¿µÄ¸´Ñ¡¿ò¡£
-¸´Ñ¡¿ò¿ÉÒÔÊ¹ÓÃ¼òµ¥Êı¾İ°ó¶¨Á¬½Óµ½Êı¾İ¿âÖĞµÄÔªËØ¡£ ¶à¸ö¸´Ñ¡¿ò¿ÉÒÔÊ¹ÓÃ GroupBox ¿Ø¼ş½øĞĞ·Ö×é¡£ Õâ¶ÔÓÚ¿ÉÊÓÍâ¹ÛÒÔ¼°ÓÃ»§½çÃæÉè¼ÆºÜÓĞÓÃ£¬ÒòÎª³É×é¿Ø¼ş¿ÉÒÔÔÚ´°ÌåÉè¼ÆÆ÷ÉÏÒ»ÆğÒÆ¶¯¡£ ÓĞ¹Ø¸ü¶àĞÅÏ¢£¬Çë²Î¼ûWindows ´°ÌåÊı¾İ°ó¶¨ºÍ GroupBox ¿Ø¼ş£¨Windows ´°Ìå£©¡£
-CheckBox ¿Ø¼şÓĞÁ½¸öÖØÒªÊôĞÔ£ºChecked ºÍ CheckState¡£ Checked ÊôĞÔ·µ»Ø true »ò false¡£ CheckState ÊôĞÔ·µ»Ø Checked »ò Unchecked£»Èç¹û ThreeState ÊôĞÔ±»ÉèÖÃÎª true£¬Ôò CheckState »¹¿ÉÄÜ·µ»Ø Indeterminate¡£ ´¦ÓÚ²»È·¶¨×´Ì¬Ê±£¬¸Ã¿ò»áÏÔÊ¾Îª»ÒÏÔÍâ¹Û£¬Ö¸Ê¾¸ÃÑ¡Ïî²»¿ÉÓÃ¡£
+Windows çª—ä½“ CheckBox æ§ä»¶æŒ‡ç¤ºæŸä¸ªç‰¹å®šæ¡ä»¶æ˜¯å¤„äºæ‰“å¼€è¿˜æ˜¯å…³é—­çŠ¶æ€ã€‚ å®ƒå¸¸ç”¨äºä¸ºç”¨æˆ·æä¾›æ˜¯/å¦æˆ–çœŸ/å‡é€‰é¡¹ã€‚ å¯ä»¥æˆç»„ä½¿ç”¨å¤é€‰æ¡† (CheckBox) æ§ä»¶ä»¥æ˜¾ç¤ºå¤šé‡é€‰é¡¹ï¼Œç”¨æˆ·å¯ä»¥ä»ä¸­é€‰æ‹©ä¸€é¡¹æˆ–å¤šé¡¹ã€‚
+å¤é€‰æ¡† (CheckBox) æ§ä»¶å’Œå•é€‰æŒ‰é’® (RadioButton) æ§ä»¶çš„ç›¸ä¼¼ä¹‹å¤„åœ¨äºï¼Œå®ƒä»¬éƒ½æ˜¯ç”¨äºæŒ‡ç¤ºç”¨æˆ·æ‰€é€‰çš„é€‰é¡¹ã€‚ å®ƒä»¬çš„ä¸åŒä¹‹å¤„åœ¨äºï¼Œåœ¨å•é€‰æŒ‰é’®ç»„ä¸­ä¸€æ¬¡åªèƒ½é€‰æ‹©ä¸€ä¸ªå•é€‰æŒ‰é’®ã€‚ ä½†æ˜¯å¯¹äºå¤é€‰æ¡† (CheckBox) æ§ä»¶ï¼Œåˆ™å¯ä»¥é€‰æ‹©ä»»æ„æ•°é‡çš„å¤é€‰æ¡†ã€‚
+å¤é€‰æ¡†å¯ä»¥ä½¿ç”¨ç®€å•æ•°æ®ç»‘å®šè¿æ¥åˆ°æ•°æ®åº“ä¸­çš„å…ƒç´ ã€‚ å¤šä¸ªå¤é€‰æ¡†å¯ä»¥ä½¿ç”¨ GroupBox æ§ä»¶è¿›è¡Œåˆ†ç»„ã€‚ è¿™å¯¹äºå¯è§†å¤–è§‚ä»¥åŠç”¨æˆ·ç•Œé¢è®¾è®¡å¾ˆæœ‰ç”¨ï¼Œå› ä¸ºæˆç»„æ§ä»¶å¯ä»¥åœ¨çª—ä½“è®¾è®¡å™¨ä¸Šä¸€èµ·ç§»åŠ¨ã€‚ æœ‰å…³æ›´å¤šä¿¡æ¯ï¼Œè¯·å‚è§Windows çª—ä½“æ•°æ®ç»‘å®šå’Œ GroupBox æ§ä»¶ï¼ˆWindows çª—ä½“ï¼‰ã€‚
+CheckBox æ§ä»¶æœ‰ä¸¤ä¸ªé‡è¦å±æ€§ï¼šChecked å’Œ CheckStateã€‚ Checked å±æ€§è¿”å› true æˆ– falseã€‚ CheckState å±æ€§è¿”å› Checked æˆ– Uncheckedï¼›å¦‚æœ ThreeState å±æ€§è¢«è®¾ç½®ä¸º trueï¼Œåˆ™ CheckState è¿˜å¯èƒ½è¿”å› Indeterminateã€‚ å¤„äºä¸ç¡®å®šçŠ¶æ€æ—¶ï¼Œè¯¥æ¡†ä¼šæ˜¾ç¤ºä¸ºç°æ˜¾å¤–è§‚ï¼ŒæŒ‡ç¤ºè¯¥é€‰é¡¹ä¸å¯ç”¨ã€‚
 
-## ²Î¿¼
+## å‚è€ƒ
 
 #### microsoft
 
