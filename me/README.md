@@ -3,7 +3,7 @@
 ---
 title: "Personal profile"
 author: "hnhkj@163.com"
-date: "2017-9-19"
+date: "2017-11-10"
 output: html_document
 ---
 
@@ -58,6 +58,13 @@ a project for ISDN PRI & BRI recorder.
 
 a MOH Player. for PBX music player. It's a music player. include a TF card, a USB stick interface, internal a spi-flash(save 16MByte music file). player music to PBX.
 
+![PHMG](img/PHMG.PNG)
+
+#### LattePanda - 2016
+
+![LattePanda](img/lattepanda.PNG)
+
+
 #### Ethernet MOHPlayer - 2016
 
 a wifi router IC MT7688. It run linux OS.
@@ -71,7 +78,7 @@ a Gigabit ethernet IP Phone Recorder project. old IPTap only use in 10/100M. Thi
 
 This project is sample device. It sample CAR's data and transmit to Etherent. It include GNSS, 4G LTE, G-Sensor, CAN 2.0, RS232, RS485 etc interface. It's running a linux and a PIC MCU firmware. This is a new project. Hardware design completed.
 
-
+![insight](img/insight.PNG)
 
 ......
 
