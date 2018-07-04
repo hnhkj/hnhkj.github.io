@@ -1,8 +1,8 @@
-# Harmony Bootloader Ó¦ÓÃ
+# Harmony Bootloader åº”ç”¨
 
-#### Í¨Ñ¶Ğ­Òé
+#### é€šè®¯åè®®
 
-**²Î¿¼`MPLaB Harmony Help`ÖĞµÄ`Bootloader Communication Protocol (UART, USB HID, and Ethernet)`²¿·Ö£¬¶ÔÍ¨Ñ¶Ğ­Òé½øĞĞÁËËµÃ÷¡£**
+**å‚è€ƒ`MPLaB Harmony Help`ä¸­çš„`Bootloader Communication Protocol (UART, USB HID, and Ethernet)`éƒ¨åˆ†ï¼Œå¯¹é€šè®¯åè®®è¿›è¡Œäº†è¯´æ˜ã€‚**
 
 
 ```
@@ -17,7 +17,7 @@ Command Value in Hexadecimal  Description
 
 
 ```
-[<SOH>¡­]<SOH>[<0x01>]<CRCL><CRCH><EOT>
+[<SOH>â€¦]<SOH>[<0x01>]<CRCL><CRCH><EOT>
 ```
 
 ```
