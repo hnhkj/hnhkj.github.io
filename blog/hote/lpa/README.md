@@ -13,6 +13,8 @@ LattePanda Case, It's used for a LattePanda product. LattePanda is A Powerful Wi
 
 ## 3D view
 
+![HOTe_LPA_21](img/HOTe_LPA_21)
+
 If you hope to know all of information, You can download 3D files 
 [HOTe-LPA-3d](HOTe-LPA-3d.pdf). You need to download the latest Adobe Reader software to open it.<www.adobe.com> 
 
