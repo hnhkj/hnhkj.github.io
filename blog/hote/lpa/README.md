@@ -11,6 +11,11 @@ LattePanda Case, It's used for a LattePanda product. LattePanda is A Powerful Wi
 * Size：92mm(L)x76mm(W)x29mm(H)
 * Weight: 52g +/-10%
 
+![HOTe_LPA_drawing](img/HOTe_LPA_Drawing.jpg)
+
+[Download](HOTe_LPA_Drawing.pdf)
+
+
 ## 3D view
 
 ![HOTe_LPA_21](img/HOTe_LPA_21.png)
