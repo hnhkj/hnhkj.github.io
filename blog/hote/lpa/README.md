@@ -14,7 +14,7 @@ If you hope to know all of information, You can download 3D files
 [HOTe-LPA-3d](HOTe-LPA-3d.pdf). You need to download the latest Adobe Reader software to open it.<www.adobe.com> 
 ## Assembly Preview
 
-![HOTe_LPA_01](img/HOTe_LPA_21.png)
+![HOTe_LPA_01](img/HOTe_LPA_01.png)
 
 ## Specification:
 
