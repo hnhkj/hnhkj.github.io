@@ -1,8 +1,10 @@
 # HOTe-LPA LattePanda Aluminum alloy case
 
+[cn](README_cn.md)
+
 ## Desctription:
 
-LattePanda Case, It's used for a LattePanda product. LattePanda is A Powerful Windows 10 Mini PC. If you hoep to know more information about LattePanda, Please refer to <www.lattepanda.com>
+LattePanda Case, It's used for a LattePanda product. LattePanda is A Powerful Windows 10 Mini PC. If you hope to know more information about LattePanda, Please refer to <www.lattepanda.com>
 
 ## 3D view
 
