@@ -29,7 +29,7 @@ LattePanda外壳,用来装配LattePanda产品,LattePanda 3D文件可以在<https
 * HOTe_LPA铝合金外壳一套
 
 
-## 外壳 (产品图片仅供参考,产品和图片颜色有差异)
+## 外壳 (产品图片仅供参考,产品颜色和图片有差异)
 
 ![HOTe_LPA_s1.jpg](img/HOTe_LPA_s1.jpg)
 

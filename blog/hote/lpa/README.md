@@ -28,7 +28,7 @@ If you hope to know all of information, You can download 3D files
 
 * a Aluminum Alloy Case 
 
-## Product (picture for reference only, product is different with picture)
+## Product (picture for reference only, product color is different with picture)
 
 ![HOTe_LPA_s1.jpg](img/HOTe_LPA_s1.jpg)
 
