@@ -13,6 +13,10 @@ LattePanda外壳,用来装配LattePanda产品,LattePanda 3D文件可以在<https
 如果你希望了解更多的细节，你可以下载3D文件
 [HOTe-LPA-3d](HOTe-LPA-3d.pdf)。该文件需要下载最新的Adobe Reader软件打开。Adobe Reader下载地址<www.adobe.com>。
 
+## 装配预览
+
+![HOTe_LPA_01](img/HOTe_LPA_21.png)
+
 ## 规格
 
 * 型号: HOTe-LPA
