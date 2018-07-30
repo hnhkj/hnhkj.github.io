@@ -4,7 +4,7 @@
 
 ## 描述
 
-LattePanda外壳,用来装配LattePanda 2G/3G产品。LattePanda是一台强大的Windows 10迷你电脑。 如果你希望了解更多的LattePanda信息，可以登录<www.lattepanda.com>了解。
+LattePanda外壳,用来装配LattePanda产品,LattePanda 3D文件可以在<https://github.com/LattePandaTeam/LattePanda-3D-Models.git>下载。LattePanda是一台强大的Windows 10迷你电脑。 如果你希望了解更多的LattePanda信息，可以登录<www.lattepanda.com>了解。
 
 ## 3D预览
 
