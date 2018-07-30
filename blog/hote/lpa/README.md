@@ -4,7 +4,7 @@
 
 ## Desctription:
 
-LattePanda Case, It's used for a LattePanda product, LattePanda 3D file download from link <https://github.com/LattePandaTeam/LattePanda-3D-Models.git>. LattePanda is A Powerful Windows 10 Mini PC. If you hope to know more information about LattePanda, Please refer to [www.lattepanda.com]<www.lattepanda.com>
+LattePanda Case, It's used for a LattePanda product, LattePanda 3D file download from link <https://github.com/LattePandaTeam/LattePanda-3D-Models.git>. LattePanda is A Powerful Windows 10 Mini PC. If you hope to know more information about LattePanda, Please refer to Lattepanda web <www.lattepanda.com>
 
 ## 3D view
 
@@ -18,7 +18,7 @@ If you hope to know all of information, You can download 3D files
 * Model: HOTe-LPA
 * Material: Aluminum Alloy
 * Size：92mm(L)x76mm(W)x29mm(H)
-* Weight: 52g +/-10%
+* Weight: 52g
 
 ![HOTe_LPA_drawing](img/HOTe_LPA_Drawing.jpg)
 
