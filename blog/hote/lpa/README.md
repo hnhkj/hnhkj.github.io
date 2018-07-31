@@ -10,8 +10,8 @@ LattePanda Case, It's used for a LattePanda product, LattePanda 3D file download
 
 ![HOTe_LPA_21](img/HOTe_LPA_21.png)
 
-If you hope to know all of information, You can download 3D files 
-[HOTe-LPA-3d](HOTe-LPA-3d.pdf). You need to download the latest Adobe Reader software to open it.<www.adobe.com> 
+If you hope to know all of information, You can download 3D files [HOTe-LPA-3d](HOTe-LPA-3d.pdf). You need to download the latest Adobe Reader software to open it. Adobe Reader download link <https://www.adobe.com>.
+
 ## Assembly Preview
 
 ![HOTe_LPA_01](img/HOTe_LPA_01.png)
