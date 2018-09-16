@@ -8,14 +8,14 @@ HOTe-RPA外壳，可以完美搭配最新版的Raspberry Pi 3 Model B+和Raspber
 
 ## 3D预览
 
-![HOTe_RPA_01](img/HOTe_RPA_01.png)
+![HOTe-RPA_01](img/HOTe-RPA_01.png)
 
 如果你希望了解更多的细节，你可以下载3D文件
 [HOTe-RPA-3d](HOTe-RPA-v1.2.pdf)。该文件需要下载最新的Adobe Reader软件打开。Adobe Reader下载地址<https://www.adobe.com>。
 
 ## 装配预览
 
-![HOTe_RPA_11](img/HOTe_RPA_11.png)
+![HOTe-RPA_11](img/HOTe-RPA_11.png)
 
 ## 规格
 
