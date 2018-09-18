@@ -24,7 +24,7 @@ HOTe-RPA外壳，可以完美搭配最新版的Raspberry Pi 3 Model B+和Raspber
 * 尺寸: 91mm(长)x64mm(宽)x30mm(高)
 * 重量: 46.7g
 
-![HOTe-RPA_drawing](img/HOTe-RPA_Drawing.png)
+![HOTe-RPA_drawing](img/HOTe-RPA_Drawing.PNG)
 
 [下载](HOTe-RPA_Drawing.pdf)
 
