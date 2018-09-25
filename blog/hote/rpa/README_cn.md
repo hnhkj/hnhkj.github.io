@@ -41,4 +41,12 @@ HOTe-RPA外壳，可以完美搭配最新版的Raspberry Pi 3 Model B+和Raspber
 
 ![HOTe_RPA_63.jpg](img/HOTe_RPA_63.jpg)
 
-![HOTe_RPA_64.jpg](img/HOTe_RPA_63.jpg)
+![HOTe_RPA_64.jpg](img/HOTe_RPA_64.jpg)
+
+![HOTe_RPA_65.jpg](img/HOTe_RPA_65.jpg)
+
+![HOTe_RPA_66.jpg](img/HOTe_RPA_66.jpg)
+
+![HOTe_RPA_67.jpg](img/HOTe_RPA_67.jpg)
+
+![HOTe_RPA_68.jpg](img/HOTe_RPA_68.jpg)
