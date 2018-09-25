@@ -80,6 +80,18 @@ This project is sample device. It sample CAR's data and transmit to Etherent. It
 
 ![insight](img/insight.PNG)
 
+#### Lattepanda case - 2018
+
+![HOTe_LPA_01.png](img/HOTe_LPA_01.png)
+
+<https://hnhkj.github.io/blog/hote/lpa/>
+
+#### Raspberry Pi case - 2018
+
+![HOTe-RPA_61.jp](img/HOTe-RPA_61.jpg)
+
+<https://hnhkj.github.io/blog/hote/rpa/>
+
 ......
 
 
