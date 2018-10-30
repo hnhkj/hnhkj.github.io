@@ -37,11 +37,21 @@ sudo raspi-config
 
 #### SSH登入RaspberryPi
 
-首先，我们要打开RaspberryPi的SSH服务器功能，我们可以在开始菜单来进行设置：start menu/Preferences/Raspberry Pi Configuration/Interfaces/SSH Enabled.使能后，我们就可以在其它设备上通过ssh客户端登陆RaspberryPi，并对它进行操作了．RaspberryPi默认用户名: pi,密码: raspberry
+* 在桌面下使能SSH服务
+
+首先，我们要打开RaspberryPi的SSH服务器功能，我们可以在开始菜单来进行设置：start menu/Preferences/Raspberry Pi Configuration/Interfaces/SSH Enabled.
+
+* 在命令行下使能SSH服务
+
+输入`sudo raspi-config`,在菜单中选择5 Interfacing Options/P2 SSH/ <Yes>
+
+使能后，我们就可以在其它设备上通过ssh客户端登陆RaspberryPi，并对它进行操作了．RaspberryPi默认用户名: pi,密码: raspberry
+
+
 
 putty下载地址：<https://www.putty.org/>
 
-![ssh_client](img/ssh_client.bmp)
+![ssh_client](img/ssh_client.bmp) 
 
 #### vnc登陆
 
@@ -50,3 +60,4 @@ putty下载地址：<https://www.putty.org/>
 vnc view下载地址：<https://www.realvnc.com/en/connect/download/viewer/>
 
 ![vnv_viewer](img/vnc_viewer.bmp)
+
