@@ -33,3 +33,17 @@ sudo raspi-config
 #### 音乐播放
 
 将耳机/音响插入RaspberrPi的音频插孔,通过浏览器进入`mp3.baidu.com`,随便选取你想听的歌曲,OK了,RaspberrPi播放出了优美的音乐声.
+
+#### SSH登入RaspberryPi
+
+首先，我们要打开RaspberryPi的SSH服务器功能，我们可以在开始菜单来进行设置：start menu/Preferences/Raspberry Pi Configuration/Interfaces/SSH Enabled.使能后，我们就可以在其它设备上通过ssh客户端登陆RaspberryPi，并对它进行操作了．RaspberryPi默认用户名: pi,密码: raspberry
+
+putty下载地址：<https://www.putty.org/>
+
+#### vnc登陆
+
+和SSH相同，我们要先在Raspberry Pi Configuration工具软件的Interfaces中使能VNC服务．服务启动后会在RaspberryPi桌面右上角显示ＶＮＣ标志．然后，我们就可以在其它设备上通过VNC Viewer来连接RaspberryPi了，和SSH登陆相同，填写正确的用户名密码，然后你就可以直接操作RaspberryPi了．记住奥，这可以桌面显示的奥，你可以将RaspberryPi的显示器节约下来了．
+
+vnc view下载地址：<https://www.realvnc.com/en/connect/download/viewer/>
+
+![vnv_viewer](img/vnc_viewer.bmp)
