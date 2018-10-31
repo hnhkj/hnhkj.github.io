@@ -98,7 +98,7 @@ As you can see, there's not much work to be done; everything is hidden in other 
 * `PKG_FIXUP` - See below
 * `PKG_SOURCE_PROTO` - the protocol to use for fetching the sources (git, svn)
 * `PKG_REV` - the svn revision to use, must be specified if proto is "svn"
-* `PKG_SOURCE_SUBDIR` - must be specified if proto is "svn" or "git", e.g. "`PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)`"
+* `PKG_SOURCE_SUBDIR` - must be specified if proto is "svn" or "git", e.g. "`PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)`" //　如果協議是“ＳＶＮ＂或“ＧＩＴ＂，必須指定該子目錄
 * `PKG_SOURCE_VERSION` - must be specified if proto is "git", the commit hash to check out
 * `PKG_CONFIG_DEPENDS` - specifies which config options depend on this package being selected
 
