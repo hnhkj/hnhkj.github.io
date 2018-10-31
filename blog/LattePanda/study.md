@@ -66,3 +66,17 @@ https://github.com/LattePandaTeam/LattePanda-Win10-Software/tree/master/Drivers
 
 #### 系统安装
 
+* U盘安装系统
+
+LattrePanda的说明文档讲解的是采用Ｕ盘模式安装系统．详细方法看<http://docs.lattepanda.com/content/1st_edition/os/>.
+
+* TF卡安装系统
+
+TF卡安装OS，和U盘安装相同
+<bbs.elecfans.com/jishu_1119962_1_1.html>
+
+#### 系统启动
+
+好了，系统安装完成，可以启动了．界面很熟必须吧！
+
+![LattePanda_win10](img/LattePanda_Win10.jpg)
