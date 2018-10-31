@@ -3,7 +3,7 @@
 ---
 title: "Openwrt-mdp.conf文件分析"
 author: "hnhkj@163.com"
-date: "2016年7月28日"
+date: "2016-7-28"
 output: html_document
 ---
 

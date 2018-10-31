@@ -3,7 +3,7 @@
 ---
 title: "Personal profile"
 author: "hnhkj@163.com"
-date: "2016-5-28"
+date: "2017-11-10"
 output: html_document
 ---
 
@@ -11,7 +11,7 @@ output: html_document
 
 ## Introduction
 
-Huang Kongjun. born in 1977. 15+ years experience in Embedded Hardware &Firmware Development. I can skill hardware design  and firmware design. can write C program, linux shell, VHDL program etc, and can wirte/modify wince driver, linux driver modify and compile and wirte windows/linux application. now I am study html+css+javascript, node.js, lua etc knowledge. It for a new project Ethernet MOHPlayer.
+Huang Kongjun. a engineer. 15+ years experience in Embedded Hardware &Firmware Development. I can skill hardware design  and firmware design. can write C/c++ program, linux shell, VHDL program etc, and can wirte/modify wince driver, linux driver modify and compile and wirte windows/linux application. now I am study html+css+javascript, node.js, lua etc knowledge. It for a new project Ethernet MOHPlayer.
 
 ## Working
 
@@ -41,9 +41,10 @@ global tech's project. Project include IR detect, g-sensor, rf-key etc. it use M
 
 #### SD Recorder
 
-a alone telephone Recorder, It can recorder Analog telephone commnication and save sound to SD card. It use LPC2368 serial MCU. It include a simple LCD128*64 and some key.
+a alone telephone Recorder, It can recorder Analog telephone commnication and save sound to SD card. It use LPC2368 serial MCU. It include a simple LCD128x64 and some key
 
-#### IPTAP
+
+#### IPTAP - 2014
 
 a IP phone recorder project. It include two 10/100M port and a usb port. PC software can get and save ip phone communcation. 
 device get 10/100M ethernet cabel signal and send to PC via usb.
@@ -52,9 +53,44 @@ device get 10/100M ethernet cabel signal and send to PC via usb.
 
 a project for ISDN PRI & BRI recorder.
 
-#### Ethernet MOHPlayer
+
+#### PHMG MOH Player - 2015
+
+a MOH Player. for PBX music player. It's a music player. include a TF card, a USB stick interface, internal a spi-flash(save 16MByte music file). player music to PBX.
+
+![PHMG](img/PHMG.PNG)
+
+#### LattePanda - 2016
+
+![LattePanda](img/lattepanda.PNG)
+
+
+#### Ethernet MOHPlayer - 2016
 
 a wifi router IC MT7688. It run linux OS.
+
+
+#### IPTap3 - 2017
+
+a Gigabit ethernet IP Phone Recorder project. old IPTap only use in 10/100M. This project is a Gigabit project. It's used to Gigabit ethernet. So, It's used all of IPPhone. It's running a linux os. get IPPhone and send to PC via ethernet.
+
+#### Insight Electirc - 2017
+
+This project is sample device. It sample CAR's data and transmit to Etherent. It include GNSS, 4G LTE, G-Sensor, CAN 2.0, RS232, RS485 etc interface. It's running a linux and a PIC MCU firmware. This is a new project. Hardware design completed.
+
+![insight](img/insight.PNG)
+
+#### Lattepanda case - 2018
+
+![HOTe_LPA_01.png](img/HOTe_LPA_01.png)
+
+<https://hnhkj.github.io/blog/hote/lpa/>
+
+#### Raspberry Pi case - 2018
+
+![HOTe-RPA_61.jp](img/HOTe-RPA_61.jpg)
+
+<https://hnhkj.github.io/blog/hote/rpa/>
 
 ......
 

@@ -3,7 +3,7 @@
 ---
 title: "LinkIt Smart 7688 EEPROM 相关问题研究"
 author: "hnhkj@163.com"
-date: "2016年6月12日"
+date: "2016-6-12"
 output: html_document
 ---
 

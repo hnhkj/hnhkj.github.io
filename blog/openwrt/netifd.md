@@ -1,7 +1,7 @@
 ---
 title: "OpenWrt - netifd (Network Interface Daemon) – Technical Reference"
 author: "hnhkj@163.com"
-date: "2016年6月13日"
+date: "2016-6-13"
 output: html_document
 ---
 
@@ -20,7 +20,7 @@ netifd is an RPC-capable daemon written in C for better access to kernel APIs wi
 
 netifd是一个用C写的RPC-capable守护进程，能够很好地访问kernel的API，有侦听netlink事件的能力。Netifd重置了旧的OpenWrt-network配置脚本，配置网络的实际脚本，例如：
 
-* /lib/network/*.sh,
+* /lib/network/\*.sh,
 * /sbin/ifup
 * some scripts in /etc/hotplug.d.)
 

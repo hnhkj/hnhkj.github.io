@@ -3,7 +3,7 @@
 ---
 title: "Openwrt-增加你的板子到Openwrt"
 author: "huang,hnhkj@163.com"
-date: "2017年2月6日"
+date: "2017-2-6"
 output: html_document
 ---
 

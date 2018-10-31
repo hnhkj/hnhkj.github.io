@@ -1,7 +1,7 @@
 ---
 title: "OpenWrt - uHTTPd"
 author: "hnhkj@163.com"
-date: "2016年6月14日"
+date: "2016-6-14"
 output: html_document
 ---
 

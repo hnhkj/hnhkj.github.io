@@ -1,7 +1,7 @@
 ---
 title: "LinkIt™ Smart 7688 webUI分析"
 author: "hnhkj@163.com"
-date: "2016年8月10日"
+date: "2016-8-10"
 output: word_document
 ---
 

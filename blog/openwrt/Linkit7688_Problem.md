@@ -1,7 +1,7 @@
 ---
 title: "一点一滴分析LinkIt Smart 7688 问题汇总"
 author: "hnhkj@163.com"
-date: "2016年6月28日"
+date: "2016-6-28"
 output: html_document
 ---
 

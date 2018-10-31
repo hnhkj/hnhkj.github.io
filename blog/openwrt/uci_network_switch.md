@@ -1,7 +1,7 @@
 ---
 title: "OpenWrt - uci/network/switch"
 author: "hnhkj@163.com"
-date: "2016年6月16日"
+date: "2016-6-16"
 output: html_document
 ---
 

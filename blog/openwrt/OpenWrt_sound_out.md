@@ -1,7 +1,7 @@
 ---
 title: "Linkit Smart 7688 //wm8960声卡speaker&mono输出"
 author: "hnhkj@163.com"
-date: "2016年6月20日"
+date: "2016-6-20"
 output: html_document
 ---
 

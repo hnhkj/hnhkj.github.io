@@ -1,7 +1,7 @@
 ---
 title: "Openwrt - Alsa 声卡应用"
 author: "hnhkj@163.com"
-date: "2016年7月1日"
+date: "2016-7-1"
 output: html_document
 ---
 

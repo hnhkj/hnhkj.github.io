@@ -3,7 +3,7 @@
 ---
 title: "MT7688 mac/wifi调整测试"
 author: "huang@irl-recording.com"
-date: "2016年6月7日"
+date: "2016-6-7"
 output: html_document
 ---
 
