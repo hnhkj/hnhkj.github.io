@@ -1,5 +1,11 @@
 # LattePanda入手笔记
 
+---
+title: "LattePanda入手笔记"
+author: "hnhkj@163.com"
+date: "2018-10-31"
+output: html_document
+---
 
 ## 绪论
 
@@ -21,7 +27,7 @@ LattePanda<https://www.lattepanda.com/>一个神奇的板子，它是可以运�
 
 ## 使用入门
 
-<docs.lattepanda.com>
+相关信息可以参考LattePanda的官方文档<docs.lattepanda.com>.
 
 #### 开机
 
