@@ -21,7 +21,7 @@ output: html_document
 
 如果采用procd方式，需要创建脚本到 /etc/rc.button/ 目录。每个脚本对应指定的按钮。如果采用gpio-button-hotplug，需要创建脚本到 /etc/hotplug.d/button/00-button，该脚本处理按钮信息。参考openwrt网站信息。
 
-```
+```sh
 root@mylinkit:/# cat /sys/kernel/debug/gpio
 GPIOs 0-31, platform/10000600.gpio, 10000600.gpio:
 gpio-11  (bootstrap           ) out lo
@@ -43,10 +43,14 @@ gpio-127 (mediatek:orange:wifi) out ?
 
 
 3.5.2 脚本 GPIO 控制
-  https://wiki.openwrt.org/doc/howto/hardware.button
-  https://wiki.openwrt.org/doc/hardware/port.gpio?s[]=kmod&s[]=leds&s[]=gpio
-  https://wiki.openwrt.org/doc/howto/hardware.button#preliminary.steps
 
+  <https://wiki.openwrt.org/doc/howto/hardware.button>
+  
+  <https://wiki.openwrt.org/doc/hardware/port.gpio?s[]=kmod&s[]=leds&s[]=gpio>
+  
+  <https://wiki.openwrt.org/doc/howto/hardware.button#preliminary.steps>
+
+```
  http://wiki.wrtnode.cc/index.php?title=用户空间gpio的调用
  1. GPIO应用层控制
   1.1 GPIO39引脚控制LED
@@ -89,3 +93,4 @@ gpio-127 (mediatek:orange:wifi) out ?
   1
   root@mylinkit:/sys/devices/10000000.palmbus/10000600.gpio/gpio/gpio16# cat value
   0
+```
