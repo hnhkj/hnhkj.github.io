@@ -53,7 +53,7 @@ output: html_document
 <h4 id="1.1"></h4>
 #### 1.1 .config文件
 
-openwrt中，`make menuconfig`生成.config文件后，我们如何对.config中自定义的差异内容进行进行备份，方便移植到其它的系统中，这是一个问题。当然，有人说有很多简单的方法。但是这些都不是Openwrt开发着所希望看到的。对于Openwrt，开发团队创建了简单的工具scripts/diffconfig.sh`。我们可以采用这个工具进行配置保存工作。
+openwrt中`make menuconfig`生成.config文件后，我们如何对.config中自定义的差异内容进行进行备份，方便移植到其它的系统中，这是一个问题。当然，有人说有很多简单的方法。但是这些都不是Openwrt开发着所希望看到的。对于Openwrt，开发团队创建了简单的工具`scripts/diffconfig.sh`。我们可以采用这个工具进行配置保存工作。
 
 有一个简单的方法，生成diff文件，然后通过git进行操作，这样我们可以对我们自己的openwrt进行定制备份了。
 
@@ -74,24 +74,23 @@ openwrt中，`make menuconfig`生成.config文件后，我们如何对.config中
 
 或者
 
-```
-  $cat config.diff >> .config
-  $make defconfig
+```sh
+$cat config.diff >> .config
+$make defconfig
 ```
 
 **1.1.3 make meunconfig**
 
-```
-  $ make prereq
-  $make menuconfig
+```sh
+$ make prereq
+$ make menuconfig
 ```
 
 **1.1.3 make kernel_menuconfig**
 
-```
+```sh
 $ make kernel_menuconfig
 ```
-
 
 <h4 id="1.2"></h4>  
 #### 1.2 编译
@@ -135,21 +134,21 @@ $ make package/feeds/packages/madplay/compile V=s
 
 复制ipk文件到openwrt系统(采用scp命令)，然后通过opkg进行安装。
 
-```
-  $ scp bin/ramips/packages/packages/madplay-alsa_0.15.2b-4_ramips_24kec.ipk root@192.168.1.168:/tmp
+```sh
+$ scp bin/ramips/packages/packages/madplay-alsa_0.15.2b-4_ramips_24kec.ipk root@192.168.1.168:/tmp
 ```
 
 安装madplay到openwrt
 
-```
-  # root@mylinkit:/tmp# opkg install madplay-alsa_0.15.2b-4_ramips_24kec.ipk
-    Installing madplay-alsa (0.15.2b-4) to root...
-    Configuring madplay-alsa.
+```sh
+$ root@mylinkit:/tmp# opkg install madplay-alsa_0.15.2b-4_ramips_24kec.ipk
+Installing madplay-alsa (0.15.2b-4) to root...
+Configuring madplay-alsa.
 ```
 
 **MadPay源码修改**
 
-```
+```sh
 $ wget ftp://ftp.mars.org/pub/mpeg/madplay-0.15.2b.tar.gz
 ```
 
@@ -166,12 +165,11 @@ $ scp bin/ramips/packages/packages/madplay-alsa_0.15.2b-4_ramips_24kec.ipk root@
 
 创建madplayCon.c文件
 
+```sh
+root@ethMOH# make package/feeds/packages/gogoo/ethMOH/{clean,compile,install} V=s
 ```
-# make package/feeds/packages/gogoo/ethMOH/{clean,compile,install} V=s
 
-```
-
-```
+```sh
   KEY_PAUSE    = 'p', 
   KEY_STOP     = 's',
   KEY_FORWARD  = 'f',
@@ -237,12 +235,11 @@ MT7688按钮一组为32个，所以GPIO0组对应GPIO0-PIO32，GPIO1组对应GPI
 
 **尖括号中的内容为标准按键代码，可以在linux/include/uapi/linux/input.h中查询到。**
 
-<h4 id="1.3.2"></h4>  
-**1.3.2 SD卡检测引脚电平修改**
+<h4 id="1.3.2">1.3.2 SD卡检测引脚电平修改</h4>  
 
 LinkIt smart7688的SD卡检测，默认是高电平。但是普通的SD卡是低电平。所以，要对dts进行修改。使用下面命令：
 
-```
+```sh
 $ vi target/linux/ramips/dts/LINKIT7688.dts
 ```
 
@@ -325,16 +322,16 @@ JFFS2全名是 Journalling Flash File System Version2，是Redhat公司开发的
 
 
 参考windora
+
 * 修改`target\linux\ramips\base-files\etc\board.d\02_network`
 * 修改`target\linux\ramips\base-files\lib\ramips.sh`
 * 修改`target\linux\ramips\base-files\lib\upgrade\platform.sh`
 * 修改`target\linux\ramips\image\Makefile`
-* 创建一个*.mk文件到`target\linux\ramips\mt7688\profiles\`目录下
-* 创建一个example.dts文件到`target\linux\ramips\dts\`目录下
+* 创建一个\*.mk文件到`target\linux\ramips\mt7688\profiles\`目录下
+* 创建一个example.dts文件到`target\linux\ramips\dts\`目录
 
 
-
-```
+```sh
 root@mylinkit:~# cat /proc/cpuinfo
 system type             : MediaTek MT7688 ver:1 eco:2
 machine                 : MediaTek LinkIt Smart 7688
@@ -357,16 +354,13 @@ VCEI exceptions         : not available
 ```
 
 
-<h4 id="1.6"></h4>
-#### 1.6 rpcd -  (OpenWrt ubus RPC backend server)
+<h4 id="1.6">1.6 rpcd -  (OpenWrt ubus RPC backend server)</h4>
 
-
-<h4 id="1.7"></h4>
-#### 1.7 patch
+<h4 id="1.7">1.7 patch</h4>
 
 <http://blog.csdn.net/wwx0715/article/details/25160361>
 
-```
+```sh
 $ quilt --help
 用法：quilt [--trace[=verbose]] [--quiltrc=XX] command [-h] ...
        quilt --version
@@ -410,9 +404,9 @@ EDITOR="nano"
 EOF
 ```
 
-**1.7.2
+**1.7.2**
 
-```
+```sh
 $ cd ~/openwrt/openwrt_ethMOH/build_dir/target-mipsel_24kec+dsp_uClibc-0.9.33.2/linux-ramips_mt7688/linux-3.18.29/
 $ quilt series
 $ quilt new platform/502-alsa.patch
@@ -425,7 +419,7 @@ $ make target/linux/update package/index V=s
 
 修改存在的patch
 
-```
+```sh
 $ quilt push platform/502-alsa.patch
 $ quilt edit sound/soc/codecs/wm8960.c
 $ quilt diff
@@ -455,35 +449,35 @@ Linkit的默认的声卡是WM8960，该声卡为I2S接口。Linkit默认WM8960�
 具体的修改可以参考https://github.com/hnhkj/CC15.05.git的代码。
 
 #### 1.10 USB声卡CM108
+
 https://wiki.openwrt.org/doc/howto/usb.audio?s[]=sound
 
 #### 1.11 wps 功能 (don't support)
 
 <http://labs.mediatek.com/forums/posts/list/4850.page>
 
-
 #### 1.12 init.d/rc.d开机自动运行
 
 参考文档：<https://wiki.openwrt.org/doc/techref/initscripts>
 
+```
 启动方法：
   1，创建脚本到 init.d(具体参考原来文档)。
   2，开机自动运行./etc/init.d/example enable。
   3, 使能自动运行可以在/etc/rc.d/ 下查找到连接
+```
 
 #### 1.13 eclipse
 
 <http://downloads.openwrt.org/docs/eclipse.pdf>
 
-<h2 id="2"></h2>
-## 2. 系统配置
+<h2 id="2">2. 系统配置</h2>
 
-<h4 id="2.1"></h4>
-#### 2.1 MTD
+<h4 id="2.1">2.1 MTD</h4>
 
 参考连接：<https://wiki.openwrt.org/doc/techref/mtd>
 
-```
+```sh
 root@mylinkit:~# mtd
 Usage: mtd [<options> ...] <command> [<arguments> ...] <device>[:<device>...]
 
@@ -513,12 +507,11 @@ Example: To write linux.trx to mtd4 labeled as linux and reboot afterwards
          mtd -r write linux.trx linux
 ```
 
-<h4 id="2.1.1"></h4>
-* 2.1.1 如何显示MTD状态
+<h4 id="2.1.1">2.1.1 如何显示MTD状态</h4>
 
 **mylinkit-7688**
 
-```
+```sh
 root@mylinkit:/tmp# cat /proc/mtd
 dev:    size   erasesize  name
 mtd0: 00030000 00010000 "u-boot"
@@ -532,7 +525,7 @@ mtd6: 00100000 00010000 "rootfs_data"
 
 **openwrt-MT7621**
 
-```
+```sh
 root@ipRec:~# cat /proc/mtd 
 dev:    size   erasesize  name
 mtd0: 00030000 00010000 "u-boot"
@@ -545,9 +538,9 @@ mtd6: 00bb0000 00010000 "rootfs_data"
 
 ```
 
-<h4 id="2.1.2"></h4>  
-* 2.1.2 dd命令：/bin/dd
-  读取mtd2内的数据内容，mac地址
+<h4 id="2.1.2">2.1.2 dd命令：/bin/dd</h4>  
+
+读取mtd2内的数据内容，mac地址
 
 ```
 # dd bs=1 skip=3 count=6 if=/dev/mtd2 2>/dev/null | hexdump
@@ -559,8 +552,7 @@ mtd6: 00bb0000 00010000 "rootfs_data"
 MAC=$(dd bs=1 skip=7 count=3 if=/dev/mtd2 2>/dev/null | hexdump -v -n 3 -e '3/1 "%02X"'
 ```
 
-<h4 id="2.1.3"></h4>
-* 2.1.3 入如何写firmware到flash.
+<h4 id="2.1.3">2.1.3 入如何写firmware到flash.</h4>
 
 ```
    # cd /tmp
@@ -568,21 +560,19 @@ MAC=$(dd bs=1 skip=7 count=3 if=/dev/mtd2 2>/dev/null | hexdump -v -n 3 -e '3/1 
    # mtd -r write /tmp/original_firmware.bin firmware
 ```
 
-<h4 id="2.1.4"></h4>
-* 2.1.4 备份MTD2/factory信息
+<h4 id="2.1.4">2.1.4 备份MTD2/factory信息</h4>
 
 ```
   # dd if=/dev/mtd2 of=/tmp/factory.bin
 ```
 
-<h4 id="2.1.5"></h4>
-* 2.1.5 写factory.bin到mtd2
+<h4 id="2.1.5">2.1.5 写factory.bin到mtd2</h4>
 
 ```
   # mtd -r write /tmp/factory.bin factory
 ```
 
-*注意：*如果命令返回不能写入MTD2，可能是由于你的系统设定了禁止写该区域的权限。我们可以通过修改`target/linux/ramips/dts/LINKIT7688.dts`，注销禁止代码。这样就可以将数据写入到MTD2区域了。
+***注意：***如果命令返回不能写入MTD2，可能是由于你的系统设定了禁止写该区域的权限。我们可以通过修改`target/linux/ramips/dts/LINKIT7688.dts`，注销禁止代码。这样就可以将数据写入到MTD2区域了。
 
 ```
 I know that we can modify LINKIT7688 file to allow mtd command modify mtd2's data.
@@ -602,7 +592,7 @@ delete read-only.
 
 ```
 opkg install uboot-envtools
-```_
+```
 
 * fw\_printenv命令：/usr/sbin/fw_printenv
 
@@ -613,9 +603,7 @@ Line15:
 >  SEQ=`fw_printenv -n wifi_seq`
 
 
-<h4 id="2.2"></h4>
-#### 2.2 用SD卡扩展空间(未验证)
-
+<h4 id="2.2">2.2 用SD卡扩展空间(未验证)</h4>
 
 参考: <http://labs.mediatek.com/forums/posts/list/4121.page>
 
@@ -631,12 +619,11 @@ modify option 'enable' '1'
 ```
 
 
-<h4 id="2.3"></h4>
-#### 2.3 ifconfig 相关参数
+<h4 id="2.3">2.3 ifconfig 相关参数</h4>
 
 **状态：Ethernet0 连接PC，Wifi连接Router (状态非常好)**
 
-```
+```sh
 ifconfig
 apcli0    Link encap:Ethernet  HWaddr 9E:65:F9:0B:18:55
           inet addr:192.168.1.104  Bcast:192.168.1.255  Mask:255.255.255.0
@@ -693,10 +680,9 @@ ra0       Link encap:Ethernet  HWaddr 9C:65:F9:1B:18:55
 ```
 
 
-<h4 id="2.4"></h4>
-#### 2.4 network 配置
+<h4 id="2.4">2.4 network 配置</h4>
 
-```
+```sh
 config interface 'loopback'
     option ifname 'lo'
     option proto 'static'
@@ -725,11 +711,11 @@ config interface 'wan'
     option proto 'dhcp'
 ```
 
-<h4 id="2.5"></h4>
-#### 2.5 eeprom配置
+<h4 id="2.5">2.5 eeprom配置</h4>
 
 eepromn内容可以在`/lib/firmware/mt7628.eeprom`中。
 
+```
 * 2.1 - Chip ID(0x00h)
 * 2.2 - Layout Revision ID(0x02)
 * 2.3 - WIFI MAC Address (0x04)
@@ -754,9 +740,9 @@ eepromn内容可以在`/lib/firmware/mt7628.eeprom`中。
 * 2.22 - 2.4GHz Step Number (0xC6)
 * 2.23 - Frequency offset (0xF4~0xF6)
 * 2.24 - Reserved for Customer (0x140~0x1EF)
+```
 
-<h4 id="2.6"></h4>
-#### 2.6 Sysupgrade
+<h4 id="2.6">2.6 Sysupgrade</h4>
 
 <https://wiki.openwrt.org/doc/howto/generic.sysupgrade>
 
@@ -766,30 +752,27 @@ eepromn内容可以在`/lib/firmware/mt7628.eeprom`中。
 
 时区设置保存在/tmp/TZ中。
 
-```
+```sh
 root@mylinkit:/tmp# cat TZ
 UTC
 ```
 
-<h4 id="2.7"></h4>
-#### 2.7 uhttpd
+<h4 id="2.7">2.7 uhttpd</h4>
 
 <https://wiki.openwrt.org/doc/howto/http.uhttpd>
 
-<h4 id="2.8"></h4>
-#### 2.8 修改Linkit\_Smart\_7688默认的SSID
+<h4 id="2.8">2.8 修改Linkit\_Smart\_7688默认的SSID</h4>
 
 在`mtk-linkit\files\etc\uci-defaults\51\_linkit\_config`文件中，默认是读取wifi MAC address的后3个字节，加载到字符串`LiniIt_Smart_7688_`的后面，根据MAC地址的唯一性，形成一个唯一的SSID地址。如果我们想修改该SSID的话，可以在这个文件中进行修改。又或者配置SSID到uboot环境变量中，形成自己的SSID。这部分实现可以参考`lks7688.cfg`部分。如果系统在uboot中设置了SSID的话，系统将显示该SSID。如果没有设置的话，系统将设置该文件配置的SSID。
 
-```
+```sh
 [ -n "${SSID}" ] || { \
   MAC=$(dd bs=1 skip=7 count=3 if=/dev/mtd2 2>/dev/null | hexdump -v -n 3 -e '3/1 "%02X"')
   SSID=LinkIt_Smart_7688_${MAC}
 }
 ```
 
-<h4 id="2.9"></h4>
-#### 2.9 修改Linkit\_Smart\_7688的版本号
+<h4 id="2.9">2.9 修改Linkit\_Smart\_7688的版本号</h4>
 
 Linkit\_Smart\_7688默认拥有自己的版本号,该版本号定义在`mtk-linkit\files\etc\uci-defaults\54_linkit_version`文件中。
 
@@ -797,8 +780,7 @@ Linkit\_Smart\_7688默认拥有自己的版本号,该版本号定义在`mtk-link
 uci set system.@system[0].firmware_version=v0.9.3
 ```
 
-<h4 id="2.10"></h4>
-#### 2.10 修改Linkit\_Smart\_7688的主机名
+<h4 id="2.10">2.10 修改Linkit\_Smart\_7688的主机名</h4>
 
 Linkit\_Smart\_7688的主机名在`mtk-linkit\files\etc\uci-defaults\51_linkit_config`文件中定义，你可以通过修改这个文件来修改主机名。
 
@@ -806,9 +788,7 @@ Linkit\_Smart\_7688的主机名在`mtk-linkit\files\etc\uci-defaults\51_linkit_c
 uci set system.@system[-1].hostname="mylinkIt"
 ```
 
-
-<h4 id="2.11"></h4>
-#### 2.11 获得Linkit\_Smart\_7688的MAC地址
+<h4 id="2.11">2.11 获得Linkit\_Smart\_7688的MAC地址</h4>
 
 对于如何获取MAC地址，OpenWrt提供了详细的程序接口。可以参考`\openwrt\package\base-files\files\lib\functions\system.sh`文件，该文件包含的mac的操作函数。在很多的sh文档中都包含的对该文件的引用。
 
@@ -827,12 +807,11 @@ iwinfo ra0 info | grep Access | awk '{print $3}')
 ```
 
 
-<h4 id="2.12"></h4>
-#### 2.12 Linkit\_Smart\_7688默认模组的添加和删除
+<h4 id="2.12">2.12 Linkit\_Smart\_7688默认模组的添加和删除</h4>
 
-Linkit\_Smart\_7688默认添加了很多的模组，例如：python，node.js等。我们如何对默认的模组进行修改，添加或删除想要的模组呢。其实很简单，我们就是需要修改`mtk-linkit\Makefile`，在该文件中修改想要或不想要的模组。然后feed install它就可以了。当然，你会发现已经安装过的模组，在文件中删除后，编译后仍然会在firmware中，这是怎么回事呢？这是因为，在编译默认的Makefile的时候，系统通过feed已经将原来默认的模组添加进了.config。如果要删除它们，需要同feed来删除它们。然后，编译以后就不会出现了。
+`Linkit_Smart_7688`默认添加了很多的模组，例如：python，node.js等。我们如何对默认的模组进行修改，添加或删除想要的模组呢。其实很简单，我们就是需要修改`mtk-linkit\Makefile`，在该文件中修改想要或不想要的模组。然后feed install它就可以了。当然，你会发现已经安装过的模组，在文件中删除后，编译后仍然会在firmware中，这是怎么回事呢？这是因为，在编译默认的Makefile的时候，系统通过feed已经将原来默认的模组添加进了.config。如果要删除它们，需要同feed来删除它们。然后，编译以后就不会出现了。
 
-```
+```text
 define Package/mtk-linkit
   TITLE:=MTK LinkIt Smart board support package
   HIDDEN:=1
@@ -857,8 +836,7 @@ define Package/mtk-linkit
 endef
 ```
 
-<h4 id="2.13"></h4>
-#### 2.13 如果修改Linkit\_Smart\_7688默认opkg连接地址
+<h4 id="2.13">2.13 如果修改`Linkit_Smart_7688`默认opkg连接地址</h4>
 
 ```
 ubuntu@ubuntu-System-Name:~/openwrt/openwrt_ethMOH$ cat feeds.conf.default
@@ -880,26 +858,44 @@ src-git management https://github.com/openwrt-management/packages.git;for-15.05
 
 ```
 
-该连接地址的修改主要修改一个文件`mtk-linkit\files\etc\opkg\linkit.conf`。我们可以通过修改这个文件中的文件指向你的opkg连接地址，然后编译。编译后出的OS就可以通过`opkg install`连接你的服务器了。当然，如果你不想使用Linkit\_Smart\_7688默认的opkg连接地址的话，你可以在`mtk-linkit\files\etc\init.d\linkit`文件中删除对`linkit.conf`的初始化部分，这样在OpenWrt启动的时候就不会讲linit.conf添加`/etc/opkg/distfeeds.conf`。
+该连接地址的修改主要修改一个文件`mtk-linkit\files\etc\opkg\linkit.conf`。我们可以通过修改这个文件中的文件指向你的opkg连接地址，然后编译。编译后出的OS就可以通过`opkg install`连接你的服务器了。当然，如果你不想使用`Linkit_Smart_7688`默认的opkg连接地址的话，你可以在`mtk-linkit\files\etc\init.d\linkit`文件中删除对`linkit.conf`的初始化部分，这样在`OpenWrt`启动的时候就不会讲`linit.conf`添加`/etc/opkg/distfeeds.conf`。
 
 当然，如果你不想修改系统，只是在OpenWrt中修改opkg连接地址的话，那也很简单。你只要用vi命令修改`/etc/opkg/distfeeds.conf`文件就可以了。这也很简单。
 
-<h4 id="2.14"></h4>
-#### 2.14 如果修改Linkit\_Smart\_7688默认lan ipaddress.
+<h4 id="2.14">2.14 如何修改Linkit_Smart_7688默认lan ipaddress.</h4>
 
 默认的`Lan IPAddress`在OpenWrt的`/etc/config/network`文件中设置，如果想修改ip地址。可以在`linkit-smart-7688-feed\mtk-linkit\files\etc\uci-defaults\51_linkit_config`文件中进行修改。linkit-smart-7688-feed默认的`Lan ipaddr` 是 `192.168.100.1`。
 
-<h4 id="2.15"></h4>
-#### 2.15 如果修改Linkit\_Smart\_7688的GPIO11.
+<h4 id="2.15">2.15 如果修改Linkit_Smart_7688的GPIO11.</h4>
 
 Linkit\_Smart\_7688的GPIO11引脚，默认用来锁定`CL245A`芯片的。该芯片是一个锁存器，用来提升MT7688的引脚输出功率和保护MT7688的引脚功能。但是，如果你不需要这个功能，希望将GPIO11引脚释放出来的话。你可以对源代码进行一些修改或者删除。MTK在linux中增加了一个驱动，用来驱动GPIO11引脚的。详细内容可以参考`target\linux\ramips\patches-3.18\0200-linkit_bootstrap.patch`文件。
 
-<h4 id="2.16"></h4>
-#### 2.16 aplay多声卡的使用
+<h4 id="2.16">2.16 aplay多声卡的使用</h4>
 
 Linkit默认使用WM8960声卡，现在增加了一个USB声卡，声卡检测发现了该USB声卡。<http://alsa.opensrc.org/MultipleCards>
 
-2.16.1 aplay查询有效声卡 aplay -l
+
+命令运行结果:
+
+```
+root@mylinkit:/# aplay -l
+**** List of PLAYBACK Hardware Devices ****
+card 0: I2S [MTK APSoC I2S], device 0: WMserious PCM wm8960-hifi-0 []
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 1: Set [C-Media USB Headphone Set], device 0: USB Audio [USB Audio]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+
+arecord -Dhw:0 -f cd -t wav -M /tmp/rec.wav
+aplay -Dhw:0 /tmp/rec.wav
+
+arecord -Dhw:1 -f cd -t wav -M /tmp/rec1.wav
+aplay -Dhw:1 /tmp/rec1.wav
+```
+
+
+#### 2.16.1 aplay查询有效声卡 aplay -l
 
 ```
 root@mylinkit:/# aplay -l
@@ -912,16 +908,16 @@ card 1: Set [C-Media USB Headphone Set], device 0: USB Audio [USB Audio]
   Subdevice #0: subdevice #0
 ```
 
-2.16.2 用指定的声卡播放 aplay -Dhw:x (x=0,x=1)
+#### 2.16.2 用指定的声卡播放 aplay -Dhw:x (x=0,x=1)
 
 ```
 root@mylinkit:/# aplay -Dhw:1 /Media/SD-P1/*.wav
 Playing WAVE '/Media/SD-P1/1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 ```
 
-2.16.3 aplay -h
+#### 2.16.3 aplay -h
 
-```
+```sh
 root@mylinkit:/# aplay -h
 Usage: aplay [OPTION]... [FILE]...
 
@@ -973,16 +969,14 @@ The available format shortcuts are:
 -f dat (16 bit little endian, 48000, stereo)
 ```
 
+#### 2.16.4 arecord & aplay test
 
-2.16.4 arecord & aplay test
-
-```
+```sh
 arecord -f cd -t wav -M /Media/USB-A1/my_recording.wav
 aplay -M my_recording.wav
 ```
 
-
-2.16.5 参考连接：
+#### 2.16.5 参考连接：
 
 <http://alsa.opensrc.org/>
 
