@@ -108,7 +108,7 @@ card 1: Device [USB Audio Device], device 0: USB Audio [USB Audio]
     * audiohw_loopback
     * audiohw_micboost
 
-
+```c
 void audiohw_preinit(void);
 int audiohw_postinit(int bSlave, int AIn, int AOut, int pll_en, int wordLen24b);
 void audiohw_close(void);
@@ -123,7 +123,7 @@ void audiohw_mute( bool mute);
 void audiohw_loopback(int fsel);
 void audiohw_codec_exlbk(void);
 void audiohw_bypass(void);
-
+```
 
 ## 参考文档
 
