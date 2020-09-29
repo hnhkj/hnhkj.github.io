@@ -1,9 +1,20 @@
 # MQTT
 
 
+## 名词解释
+
+* apache-apache-apollo
+* ws
+* tcp
+* wss
+* tls/ssl
+
+
+
+
 ## 服务器apache-apollo
 
-<https://activemq.apache.org/apollo/>
+<https://activemq.apache.org/apollo/>rob
 
 
 #### 安装到ubuntu
