@@ -1,4 +1,4 @@
-# RaspberryPI应用问答
+# RaspberryPI install
 
 
 ## 名词
