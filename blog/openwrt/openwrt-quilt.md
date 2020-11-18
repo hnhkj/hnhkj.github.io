@@ -3,6 +3,20 @@
 
 ## application
 
+#### modify asterisk-13
+
+```sh
+make package/asterisk-13.x/{clean,prepare} V=s QUILT=1
+cd build_dir/target-mipsel_24kec+dsp_uClibc-0.9.33.2/asterisk-13.19.2/
+quilt series
+quilt push -a
+...
+...
+quilt refresh
+cd ../../../
+make package/asterisk-13.x/update V=s
+```
+
 
 #### Adding a kernel patch
 
