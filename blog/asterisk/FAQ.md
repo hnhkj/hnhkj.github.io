@@ -3,6 +3,17 @@
 
 ## 应用
 
+#### 字符匹配
+
+* X - 匹配任意单数字0-9
+* Z - 匹配任意单数字1-9
+* N - 匹配任意单数字2-9
+* [15-7] - 匹配1,5,6,7
+* .(period)
+* !(bang)
+
+<https://blog.csdn.net/u013132673/article/details/52571369>
+
 #### 点击ESS的SW2按钮，ESS自动拨打一个电话出去
 
 * 添加按钮处理功能到`/etc/rc.button/BTN_2`
@@ -61,7 +72,7 @@ nat=force_rport,comedia
 canreivite = no
 ```
 
-* 
+* 修改`/etc/asterisk/extensions.conf`
 
 ```
 > cat /etc/asterisk/extensions.conf
