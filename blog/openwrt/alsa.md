@@ -367,9 +367,20 @@ numid=1,iface=MIXER,name='Capture Volume'
 
 #### how to direct mic to speaker (Left & Right Output Mixer)
 
-* LI2LO - numid=45
-* LB2LO - numid=46
-* LD2LO - numid=44
+running
+
+```
+amixer cset numid=45 off &&
+amixer cset numid=46 on &&
+amixer cset numid=44 off &&
+amixer cset numid=41 off &&
+amixer cset numid=43 on &&
+amixer cset numid=42 off 
+```
+
+* LI2LO/LINPUT3 - numid=45
+* LB2LO/LeftMixer - numid=46
+* LD2LO/L DAC - numid=44
 
 ```
 root@ess:~# amixer cget numid=45
@@ -386,9 +397,9 @@ numid=44,iface=MIXER,name='Left Output Mixer PCM Playback Switch'
   : values=off
 ```
 
-* RD2RO - numid=41
-* RB2RO - numid=43
-* RI2RO - numid=42
+* RD2RO/RINPUT - numid=41
+* RB2RO/RightMixer - numid=43
+* RI2RO/R DAC - numid=42
 
 ```
 root@ess:~# amixer cget numid=41
@@ -403,17 +414,6 @@ root@ess:~# amixer cget numid=42
 numid=42,iface=MIXER,name='Right Output Mixer RINPUT3 Switch'
   ; type=BOOLEAN,access=rw------,values=1
   : values=off
-```
-
-running
-
-```
-amixer cset numid=45 off &&
-amixer cset numid=46 on &&
-amixer cset numid=44 off &&
-amixer cset numid=41 off &&
-amixer cset numid=43 on &&
-amixer cset numid=42 on 
 ```
 
 Note: no sound when direct, default MIC or speaker MUTE. when running arecord will hear sound.
