@@ -395,3 +395,8 @@ Check if Link is up using devstatus and Json
 
 	echo "Speed: $var1"
 	echo "Link: $var2"
+
+
+## Reference
+
+<https://www.jianshu.com/p/49893bd20980>
