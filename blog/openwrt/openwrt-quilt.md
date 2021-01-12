@@ -31,6 +31,15 @@ quilt series
 quilt push -a
 # create a new, empty patch file
 quilt new platform/800-driver-staging-fbtft.patch
+# add track files
+quilt add sound/soc/mtk/
+# see track files
+quilt files
+# tarck sound driver files
+cd sound/soc/
+quilt add mtk/i2c_wm8960.c
+quilt add codec/wm8960.c
+
 # do modification
 ...
 # review the modification
