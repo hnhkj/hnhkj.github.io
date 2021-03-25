@@ -5,9 +5,11 @@
 
 #### harbor
 
-<https://www.cnblogs.com/xiao987334176/p/11326467.html>
+参考文档 <https://www.cnblogs.com/xiao987334176/p/11326467.html>
 
 #### Registry
+
+参考文档<https://www.cnblogs.com/gcgc/p/10489385.html>
 
 ```
 docker pull registry:2
@@ -83,4 +85,24 @@ docker pull localhost:5000/nginx:latest
 
 <https://www.cnblogs.com/huanchupkblog/p/10843800.html>
 
+
+## 问题
+
+#### docker login
+
+```
+ubuntu@ubuntu-B150M-VP:~$ docker login 192.168.0.169
+Username: huang
+Password: 
+Error response from daemon: Get http://192.168.0.169/v2/: Get http://192.168.0.101/service/token?account=huang&client_id=docker&offline_token=true&service=harbor-registry: dial tcp 192.168.0.101:80: connect: no route to host
+```
+
+```
+1 # cd /home/ubuntu/docker/harbor
+2 # docker-comppose down
+3 # vi harbor.cfg
+4 hostname = xxx.xxx.xxx.xxx
+5 # ./prepare
+6 # docker-compose up -d
+```
 
