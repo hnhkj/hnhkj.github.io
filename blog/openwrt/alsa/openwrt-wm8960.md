@@ -3,6 +3,24 @@
 
 ## Files
 
+* /linux/sound/soc/codecs/wm8960.c
+* /linux/sound/soc/codecs/wm8960.h
+* /linux/sound/soc/mtk/i2c_wm8960.c
+* /linux/sound/soc/mtk/i2c_wm8960.h
+* /linux/sound/soc/mtk/i2s_ctrl.c
+* /linux/sound/soc/mtk/i2s_ctrl.h
+* /linux/sound/soc/mtk/i2s_debug.c
+* /linux/sound/soc/mtk/Kconfig
+* /linux/sound/soc/mtk/Makefile
+* /linux/sound/soc/mtk/mt76xx_i2s.c
+* /linux/sound/soc/mtk/mt76xx_i2s.h
+* /linux/sound/soc/mtk/mt76xx_machine.c
+* /linux/sound/soc/mtk/mt76xx_machine.h
+* /linux/sound/soc/mtk/mt76xxx_pcm.c
+* /linux/sound/soc/mtk/ralink_gdma.c
+* /linux/sound/soc/mtk/ralink_gdma.h
+
+
 #### linux/sound/soc/codecs/wm8960.c
 
 
